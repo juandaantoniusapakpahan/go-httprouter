@@ -29,7 +29,7 @@ func TestMiddleware(t *testing.T) {
 		fmt.Println("Handler Success")
 	})
 
-	middleware := &Middleware{
+	middleware := Middleware{
 		Handler: router,
 	}
 
