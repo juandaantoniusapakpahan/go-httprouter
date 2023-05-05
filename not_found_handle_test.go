@@ -18,7 +18,7 @@ func TestNotFoundHandler(t *testing.T) {
 		fmt.Fprint(w, "Not Found Brooo")
 	})
 
-	request := httptest.NewRequest("GET", "http://localhost:8080/", nil)
+	request := httptest.NewRequest("GET", "http://localhost:8080/ggwp", nil)
 	recorder := httptest.NewRecorder()
 
 	router.ServeHTTP(recorder, request)
